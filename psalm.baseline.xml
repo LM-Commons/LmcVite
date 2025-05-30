@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="6.10.3@90b5b9f5e7c8e441b191d3c82c58214753d7c7c1">
+  <file src="src/Helper/ViteTags.php">
+    <PossiblyUnusedProperty>
+      <code><![CDATA[$basePath]]></code>
+      <code><![CDATA[$dev]]></code>
+      <code><![CDATA[$manifestPath]]></code>
+      <code><![CDATA[$reactPlugin]]></code>
+      <code><![CDATA[$viteUrl]]></code>
+    </PossiblyUnusedProperty>
+  </file>
+  <file src="src/Helper/ViteTagsFactory.php">
+    <MissingOverrideAttribute>
+      <code><![CDATA[public function __invoke(ContainerInterface $container, $requestedName, ?array $options = null): ViteTags]]></code>
+    </MissingOverrideAttribute>
+    <MixedArgument>
+      <code><![CDATA[$container->get('headLink')]]></code>
+      <code><![CDATA[$container->get('inlineScript')]]></code>
+    </MixedArgument>
+  </file>
+  <file src="src/Manifest/Chunk.php">
+    <MixedArgument>
+      <code><![CDATA[$chunk['assets'] ?? []]]></code>
+      <code><![CDATA[$chunk['css'] ?? []]]></code>
+      <code><![CDATA[$chunk['dynamicImports'] ?? []]]></code>
+      <code><![CDATA[$chunk['file']]]></code>
+      <code><![CDATA[$chunk['imports'] ?? []]]></code>
+      <code><![CDATA[$chunk['isDynamicEntry'] ?? false]]></code>
+      <code><![CDATA[$chunk['isEntry'] ?? false]]></code>
+      <code><![CDATA[$chunk['name'] ?? null]]></code>
+      <code><![CDATA[$chunk['src'] ?? null]]></code>
+    </MixedArgument>
+  </file>
+  <file src="src/Manifest/Manifest.php">
+    <InvalidDocblock>
+      <code><![CDATA[private array $preloadTypes = [];]]></code>
+    </InvalidDocblock>
+    <MixedArgument>
+      <code><![CDATA[json_decode(file_get_contents($this->manifestPath), true)]]></code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion>
+      <code><![CDATA[$chunks]]></code>
+      <code><![CDATA[$chunks]]></code>
+      <code><![CDATA[$this->createStyleTags($chunks)]]></code>
+    </MixedArgumentTypeCoercion>
+    <MixedArrayAccess>
+      <code><![CDATA[$preload['as']]]></code>
+      <code><![CDATA[$preload['type']]]></code>
+    </MixedArrayAccess>
+    <MixedArrayOffset>
+      <code><![CDATA[$chunks[$entry]]]></code>
+      <code><![CDATA[$this->chunks[$entry]]]></code>
+    </MixedArrayOffset>
+    <MixedAssignment>
+      <code><![CDATA[$as]]></code>
+      <code><![CDATA[$entry]]></code>
+      <code><![CDATA[$preload]]></code>
+      <code><![CDATA[$type]]></code>
+    </MixedAssignment>
+    <MixedPropertyTypeCoercion>
+      <code><![CDATA[array_map(
+                fn(array $chunk) => Chunk::create($chunk),
+                json_decode(file_get_contents($this->manifestPath), true)
+            )]]></code>
+    </MixedPropertyTypeCoercion>
+    <PossiblyFalseArgument>
+      <code><![CDATA[file_get_contents($this->manifestPath)]]></code>
+    </PossiblyFalseArgument>
+    <PossiblyFalseOperand>
+      <code><![CDATA[strrpos($asset, '.')]]></code>
+    </PossiblyFalseOperand>
+    <PossiblyUnusedMethod>
+      <code><![CDATA[getURL]]></code>
+      <code><![CDATA[preload]]></code>
+      <code><![CDATA[preloadFonts]]></code>
+      <code><![CDATA[preloadImages]]></code>
+    </PossiblyUnusedMethod>
+    <UnusedMethod>
+      <code><![CDATA[createPreloadTags]]></code>
+    </UnusedMethod>
+    <UnusedProperty>
+      <code><![CDATA[$manifestPath]]></code>
+    </UnusedProperty>
+  </file>
+  <file src="src/Tags/ScriptTag.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[getSrcOrScript]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="test/ConfigProviderTest.php">
+    <MissingReturnType>
+      <code><![CDATA[testProvidesExpectedConfiguration]]></code>
+      <code><![CDATA[testProvidesExpectedViewHelperConfiguration]]></code>
+    </MissingReturnType>
+  </file>
+  <file src="test/Helper/ViteTagsFactoryTest.php">
+    <MixedReturnStatement>
+      <code><![CDATA[array]]></code>
+    </MixedReturnStatement>
+  </file>
+  <file src="test/Manifest/ManifestTest.php">
+    <UnusedVariable>
+      <code><![CDATA[$manifest]]></code>
+      <code><![CDATA[$manifest]]></code>
+      <code><![CDATA[$manifest]]></code>
+    </UnusedVariable>
+  </file>
+</files>

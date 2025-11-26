@@ -22,7 +22,7 @@ final class ViteTagsFactoryTest extends TestCase
         $container->setService('config', []);
         $factory = new ViteTagsFactory();
         $this->expectException(ServiceNotCreatedException::class);
-        $factory->__invoke($container, ViteTags::class);
+        $factory->__invoke($container);
     }
 
     #[DataProvider('invalidConfigProvider')]
@@ -32,7 +32,7 @@ final class ViteTagsFactoryTest extends TestCase
         $container->setService('config', $config);
         $factory = new ViteTagsFactory();
         $this->expectException(ServiceNotCreatedException::class);
-        $factory->__invoke($container, ViteTags::class);
+        $factory->__invoke($container);
     }
 
     public function testValidConfig(): void
@@ -47,7 +47,7 @@ final class ViteTagsFactoryTest extends TestCase
             ],
         ]);
         $factory = new ViteTagsFactory();
-        $this->assertInstanceOf(ViteTags::class, $factory->__invoke($container, ViteTags::class));
+        $this->assertInstanceOf(ViteTags::class, $factory->__invoke($container));
     }
 
     public static function invalidConfigProvider(): array

@@ -1,19 +1,13 @@
-# LmcVite
+# Lmc Vite
 
-Laminas View Helpers for Vite.
+Laminas View Helpers for using Vite in Mezzio applications
 
-<!--
-[![Build](https://github.com/lm-commons/LmcRbac/actions/workflows/build_test.yml/badge.svg)](https://github.com/lm-commons/LmcRbac/actions/workflows/build_test.yml)
-[![Version](https://poser.pugx.org/lm-commons/lmc-rbac/v)](https://packagist.org/packages/lm-commons/lmc-rbac)
-[![Total Downloads](https://poser.pugx.org/lm-commons/lmc-rbac/downloads)](//packagist.org/packages/lm-commons/lmc-rbac)
-[![License](https://poser.pugx.org/lm-commons/lmc-rbac/license)](https://packagist.org/packages/lm-commons/lmc-rbac)
-[![Coverage Status](https://coveralls.io/repos/github/LM-Commons/LmcRbac/badge.svg?branch=master)](https://coveralls.io/github/LM-Commons/LmcRbac?branch=master)
-[![Static Badge](https://img.shields.io/badge/Chat_on-Slack-blue)](https://join.slack.com/t/lm-commons/shared_invite/zt-2gankt2wj-FTS45hp1W~JEj1tWvDsUHQ)
--->
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Flm-commons%2Flmcvite%2Fproperties%2Fvalues&query=%24%5B%3A1%5D.value&label=Maintenance%20Status)
-
->[!NOTE]
-> This is for Mezzio at this point
+[![Build](https://github.com/lm-commons/lmc-vite/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/lm-commons/lmc-vite/actions/workflows/continuous-integration.yml)
+[![Version](http://poser.pugx.org/lm-commons/lmc-vite/v)](https://packagist.org/packages/lm-commons/lmc-vite)
+[![Total Downloads](https://poser.pugx.org/lm-commons/lmc-vite/downloads)](//packagist.org/packages/lm-commons/lmc-vite)
+[![License](https://poser.pugx.org/lm-commons/lmc-vite/license)](https://packagist.org/packages/lm-commons/lmc-vite)
+[![Static Badge](https://img.shields.io/badge/Chat_on-Discord-blue)](https://discord.gg/nAAu7AhR)
+![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Flm-commons%2Flmc-vite%2Fproperties%2Fvalues&query=%24%5B%3A1%5D.value&label=Maintenance%20Status)
 
 ## Requirements
 
@@ -21,8 +15,8 @@ Laminas View Helpers for Vite.
 
 ## Installation
 
-LmcVite only officially supports installation through Composer. For Composer documentation, please refer to
-[getcomposer.org](http://getcomposer.org/).
+LmcVite only officially supports installation through Composer. For Composer
+documentation, please refer to [getcomposer.org](http://getcomposer.org/).
 
 Install the module:
 
@@ -37,12 +31,13 @@ the `config/vite.global.php.dist` file to your `config/autoload` folder.
 
 To come...
 <!--
-The official documentation is available [here](https://lm-commons.github.io/LmcRbac) folder.
+The official documentation is available
+[here](https://lm-commons.github.io/LmcRbac) folder.
 
-You can also find some Doctrine entities in the [/data](/data) folder that will help you to more quickly take advantage
-of LmcRbac.
+You can also find some Doctrine entities in the [/data](/data) folder that
+will help you to more quickly take advantage of LmcRbac.
 -->
 ## Support
 
-- File issues at https://github.com/LM-Commons/LmcVite/issues.
-- Ask questions in the [LM-Commons Slack](https://join.slack.com/t/lm-commons/shared_invite/zt-2gankt2wj-FTS45hp1W~JEj1tWvDsUHQ) chat.
+- File issues at [LM-Commons issues](https://github.com/LM-Commons/lmc-vite/issues).
+- Ask questions in the [LM-Commons Discord](https://discord.gg/nAAu7AhR) chat.

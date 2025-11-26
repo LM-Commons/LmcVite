@@ -5,9 +5,8 @@ declare(strict_types=1);
 namespace Lmc\Vite\Helper;
 
 use Laminas\ServiceManager\AbstractPluginManager;
-use Laminas\ServiceManager\Exception\ServiceNotCreatedException;
-use Laminas\ServiceManager\Factory\FactoryInterface;
 use Laminas\View\HelperPluginManager;
+use Lmc\Vite\Exception\ServiceNotCreatedException;
 use Lmc\Vite\Manifest\Manifest;
 use Psr\Container\ContainerInterface;
 
@@ -15,12 +14,9 @@ use function is_array;
 use function is_bool;
 use function is_string;
 
-final class ViteTagsFactory implements FactoryInterface
+final class ViteTagsFactory
 {
-    /**
-     * @inheritDoc
-     */
-    public function __invoke(ContainerInterface $container, $requestedName, ?array $options = null): ViteTags
+    public function __invoke(ContainerInterface $container): ViteTags
     {
         /** @var array $config */
         $config = $container->get('config');

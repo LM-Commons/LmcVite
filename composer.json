@@ -12,13 +12,13 @@
   ],
   "keywords": ["laminas", "mezzio", "vite"],
   "require": {
-    "php": "~8.2.0 || ~8.3.0 || ~8.4.0",
+    "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
     "laminas/laminas-servicemanager": "^3.20",
     "laminas/laminas-view": "^2.30"
   },
   "require-dev": {
     "laminas/laminas-coding-standard": "^3.1",
-    "phpunit/phpunit": "11.0",
+    "phpunit/phpunit": "^11.5",
     "psalm/plugin-phpunit": "^0.19.0",
     "vimeo/psalm": "^6.10"
   },
@@ -42,7 +42,6 @@
   },
   "extra": {
     "laminas": {
-      "component": "Lmc\\Vite",
       "config-provider": "Lmc\\Vite\\ConfigProvider"
     }
   },

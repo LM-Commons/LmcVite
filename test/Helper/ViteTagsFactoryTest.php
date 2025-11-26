@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace LmcTest\Vite\Helper;
 
-use Laminas\ServiceManager\Exception\ServiceNotCreatedException;
 use Laminas\ServiceManager\ServiceManager;
 use Laminas\View\HelperPluginManager;
+use Lmc\Vite\Exception\ServiceNotCreatedException;
 use Lmc\Vite\Helper\ViteTags;
 use Lmc\Vite\Helper\ViteTagsFactory;
 use PHPUnit\Framework\Attributes\CoversClass;

@@ -11,12 +11,12 @@ Laminas View Helpers for using Vite in Mezzio applications
 
 ## Requirements
 
-- PHP 8.2 or higher
+- PHP 8.3 or higher
+- Laminas View v2 or v3
 
 ## Installation
 
-LmcVite only officially supports installation through Composer. For Composer
-documentation, please refer to [getcomposer.org](http://getcomposer.org/).
+LmcVite only officially supports installation through Composer.
 
 Install the module:
 
@@ -29,14 +29,9 @@ the `config/vite.global.php.dist` file to your `config/autoload` folder.
 
 ## Documentation
 
-To come...
-<!--
 The official documentation is available
-[here](https://lm-commons.github.io/LmcRbac) folder.
+[here](https://lm-commons.github.io/lmc-vite) folder.
 
-You can also find some Doctrine entities in the [/data](/data) folder that
-will help you to more quickly take advantage of LmcRbac.
--->
 ## Support
 
 - File issues at [LM-Commons issues](https://github.com/LM-Commons/lmc-vite/issues).

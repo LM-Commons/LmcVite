@@ -1,6 +1,7 @@
 # Lmc Vite
 
-Laminas View Helpers for using Vite in Mezzio applications
+Laminas View Helpers for using Vite generated assets. This is more useful when
+using frontend applications such as React web applications built using Vite. 
 
 [![Build](https://github.com/lm-commons/lmc-vite/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/lm-commons/lmc-vite/actions/workflows/continuous-integration.yml)
 [![Version](http://poser.pugx.org/lm-commons/lmc-vite/v)](https://packagist.org/packages/lm-commons/lmc-vite)
